@@ -2,19 +2,19 @@
 
 ## Description
 
-Le projet `get_next_line` a pour objectif de créer une fonction en C capable de lire une ligne à partir d'un descripteur de fichier, même si la ligne est terminée par un retour à la ligne (`\n`) ou par la fin du fichier (`EOF`). Cette fonction est utile pour lire des fichiers texte ligne par ligne.
+The `get_next_line` project aims to create a C function capable of reading a line from a file descriptor, even if the line is terminated by a newline (`\n`) or (`EOF`).
 
-## Fonctionnalités
+## Features
 
-- Lire une ligne à partir d'un descripteur de fichier.
-- Gérer les retours à la ligne et la fin de fichier.
-- Utiliser une taille de buffer définie par l'utilisateur pour optimiser les lectures.
+- Read a line from a file descriptor.
+- Handle newlines and end of file.
+- Use a user-defined buffer size to optimize reads.
 
-## Utilisation
+## Usage
 
-Pour utiliser la fonction `get_next_line`, incluez les fichiers `get_next_line.c`, `get_next_line_utils.c` et `get_next_line.h` dans votre projet. Vous pouvez ensuite appeler la fonction `get_next_line` en lui passant un descripteur de fichier.
+To use the `get_next_line` function, include the files `get_next_line.c`, `get_next_line_utils.c` et `get_next_line.h` in your project. You can then call the `get_next_line` function.
 
-Exemple d'utilisation :
+Example usage:
 
 ```c
 #include "get_next_line.h"
@@ -39,7 +39,7 @@ int main(void)
 
 ## Compilation
 
-Pour compiler le projet, vous pouvez utiliser `gcc` :
+To compile the project, you can use `gcc` :
 
 ```sh
 gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32  get_next_line.c get_next_line_utils.c -o get_next_line
